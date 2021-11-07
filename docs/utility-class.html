@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./icon.png">
+    <title>Videt CSS</title>
+    <link rel="stylesheet" href="./videt.css">
+    <meta property="og:title" content="Videt CSS">
+    <meta property="og:description" content="videt is a framework designed to make web design easier. Utility class and pre-designed class are provided. ">
+    <meta property="og:url" content="https://videt.xyz">
+    <meta property="og:site_name" content="videt CSS">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://videt.xyz/logo.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .sticky {
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 80%;
+        }
+        .side{
+            margin: 0;
+            padding: 3%;
+            width: 12%;
+            position: fixed;
+            top: 50px;
+            height: 90%;
+            overflow: auto;
+        }
+        .side::-webkit-scrollbar {
+            width: 7px;
+        }
+        .side::-webkit-scrollbar-thumb {
+            background-color: #52555c;
+            border-radius: 9999px;
+        }
+        .side::-webkit-scrollbar-track {
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gray-100 block sticky" style="padding-left: 10%; padding-right: 10%;;">
+        <a href="https://videt.xyz" class="line-none text-gray-600 inline-block" style="padding-top: 11px; padding-bottom: 10px; font-size: 23px;">Videt CSS</a>
+        <a class="float-right" href="https://github.com/brazens/videt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="align-middle fill-gray-800 hover:fill-gray-600" style="width: 20px; padding-top: 15px;margin-left: 1%;"><path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path></svg></a>
+    </div>
+    <div style="padding: 0 7% 0 7%;">
+        <div class="side">
+            <a href="https://github.com/brazens/videt/releases" class="line-none text-gray-500 inline-block align-top" style="margin-left: 3px; font-size: 12px;">version - 0.5.0</a>
+            <div style="margin-bottom: 40px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Getting Started</p>
+                <a href="docs/introduction" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Introduction</a>
+                <a href="docs/download" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Download</a>
+                <a href="https://github.com/brazens/videt/releases" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Release Notes</a>
+                <a href="https://github.com/brazens/videt" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Github</a>
+                <a href="https://www.npmjs.com/package/videt" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">npm</a>
+                <a href="https://opencollective.com/videt" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">open collective</a>
+            </div>
+            <div style="margin-bottom: 40px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Core Concepts</p>
+                <a href="docs/hover-active" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Hover, active</a>
+                <a href="docs/utility-class" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Utility class</a>
+                <a href="docs/design-class" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Design class</a>
+            </div>
+            <div style="margin-bottom: 40px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Utility Class</p>
+                <a href="docs/colors" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Colors</a>
+                <a href="docs/background-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Background Colors</a>
+                <a href="docs/text-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text Colors</a>
+                <a href="docs/border-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border Colors</a>
+                <a href="docs/opacity" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Opacity</a>
+                <a href="docs/vertical-align" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Vertical align</a>
+                <a href="docs/text-decoration" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text decoration</a>
+                <a href="docs/font-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font style</a>
+                <a href="docs/font-weight" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font weight</a>
+                <a href="docs/text-transform" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text transform</a>
+                <a href="docs/border-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border style</a>
+                <a href="docs/border-width" class="text-gray-600 block line-none text-500 " style="margin-bottom: 8px; font-size: 15px;">Border width</a>
+                <a href="docs/border-radius" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border radius</a>
+                <a href="docs/overflow" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Overflow</a>
+                <a href="docs/text-align" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text align</a>
+                <a href="docs/rotate" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Rotate</a>
+                <a href="docs/display" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Display</a>
+                <a href="docs/fill" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">SVG fill</a>
+                <a href="docs/stroke-width" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">Stroke width</a>
+                <a href="docs/user-select" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">user select</a>
+                <a href="docs/cursor" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">cursor</a>
+                <a href="docs/float" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">float</a>
+            </div>
+            <div style="margin-bottom: 100px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Design Class</p>
+                <a href="docs/badge" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Badge</a>
+                <a href="docs/note" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Note</a>
+                <a href="docs/btn" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">button</a>
+                <a href="docs/code" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Code</a>
+            </div>
+        </div>
+        <div style="margin-top: 100px; margin-left: 25%;margin-right: 20%; margin-bottom: 150px;">
+            <h1>Utility Class</h1>
+            <p style="font-size: 20px;">Videt utility class implements functions that cannot be implemented in Videt's design class, and helps to implement functions through classes in HTML without having to move to CSS.</p>
+            <p class="note border-red-400 bg-red-100">It may vary slightly depending on the version. Check out the release notes and use them! </p>
+            <h3>CSS</h3>
+            <div class="code-view">
+                <div class="view">
+                    <div class="bg-red-400 rotate-5 inline-block border-red-400 border-solid border-9 edge-30">
+                        <p>web design</p>
+                    </div>
+                </div>
+                <code class="code">
+                    <span class="text-purple-400">&lt;div class="</span><span class="text-gray-300">webdesign</span><span class="text-purple-400">"&gt;<br></span>
+                        <span class="text-blue-400" style="margin-left: 20px;">&lt;p&gt;web design&lt;/p&gt;<br></span>
+                    <span class="text-purple-400">&lt;/div&gt;<br></span>
+                    <span class="text-purple-400">&lt;style&gt;<br></span>
+                    <span class="text-purple-400" style="margin-left: 20px;">.webdesign {<br></span>
+                        <span class="text-blue-400" style="margin-left: 40px;">border-radius: .3rem;<br></span>
+                        <span class="text-blue-400" style="margin-left: 40px;">background: #F87171;<br></span>
+                        <span class="text-blue-400" style="margin-left: 40px;">border-color: #F87171;<br></span>
+                        <span class="text-blue-400" style="margin-left: 40px;">display: inline-block;<br></span>
+                        <span class="text-blue-400" style="margin-left: 40px;">border-style: solid;<br></span>
+                        <span class="text-blue-400" style="margin-left: 40px;">border-width: 9px;<br></span>
+                    <span class="text-purple-400" style="margin-left: 20px;">}<br></span>
+                    <span class="text-purple-400">&lt;/style&gt;</span>
+                </code>
+            </div>
+            <h3>Videt utility class</h3>
+            <div class="code-view">
+                <div class="view">
+                    <div class="bg-red-400 rotate-5 inline-block border-red-400 border-solid border-9 edge-30">
+                        <p>web design</p>
+                    </div>
+                </div>
+                <code class="code">
+                    <span class="text-purple-400">&lt;div class="</span><span class="text-gray-300">bg-red-400 rotate-5 inline-block border-red-400 border-solid border-9 edge-30</span><span class="text-purple-400">"&gt;<br></span>
+                        <span class="text-blue-400" style="margin-left: 20px;">&lt;p&gt;web design&lt;/p&gt;<br></span>
+                    <span class="text-purple-400">&lt;/div&gt;</span>
+                </code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
