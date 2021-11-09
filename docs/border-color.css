@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./icon.png">
+    <title>Videt CSS</title>
+    <link rel="stylesheet" href="./videt.css">
+    <meta property="og:title" content="Videt CSS">
+    <meta property="og:description" content="videt is a framework designed to make web design easier. Utility class and pre-designed class are provided. ">
+    <meta property="og:url" content="https://videt.xyz">
+    <meta property="og:site_name" content="videt CSS">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://videt.xyz/logo.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .sticky {
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 80%;
+        }
+        .side{
+            margin: 0;
+            padding: 3%;
+            width: 12%;
+            position: fixed;
+            top: 50px;
+            height: 90%;
+            overflow: auto;
+        }
+        .side::-webkit-scrollbar {
+            width: 7px;
+        }
+        .side::-webkit-scrollbar-thumb {
+            background-color: #52555c;
+            border-radius: 9999px;
+        }
+        .side::-webkit-scrollbar-track {
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gray-100 block sticky" style="padding-left: 10%; padding-right: 10%;;">
+        <a href="https://videt.xyz" class="line-none text-gray-600 inline-block" style="padding-top: 11px; padding-bottom: 10px; font-size: 23px;">Videt CSS</a>
+        <a class="float-right" href="https://github.com/brazens/videt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="align-middle fill-gray-800 hover:fill-gray-600" style="width: 20px; padding-top: 15px;margin-left: 1%;"><path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path></svg></a>
+    </div>
+    <div style="padding: 0 7% 0 7%;">
+        <div class="side">
+            <a href="https://github.com/brazens/videt/releases" class="line-none text-gray-500 inline-block align-top" style="margin-left: 3px; font-size: 12px;">version - 0.5.0</a>
+            <div style="margin-bottom: 40px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Getting Started</p>
+                <a href="./introduction" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Introduction</a>
+                <a href="./download" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Download</a>
+                <a href="https://github.com/brazens/videt/releases" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Release Notes</a>
+                <a href="https://github.com/brazens/videt" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Github</a>
+                <a href="https://www.npmjs.com/package/videt" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">npm</a>
+                <a href="https://opencollective.com/videt" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">open collective</a>
+            </div>
+            <div style="margin-bottom: 40px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Core Concepts</p>
+                <a href="./hover-active" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Hover, active</a>
+                <a href="./utility-class" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Utility class</a>
+                <a href="./design-class" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Design class</a>
+            </div>
+            <div style="margin-bottom: 40px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Utility Class</p>
+                <a href="./colors" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Colors</a>
+                <a href="./background-color" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Background Colors</a>
+                <a href="./text-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text Colors</a>
+                <a href="./border-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border Colors</a>
+                <a href="./opacity" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Opacity</a>
+                <a href="./vertical-align" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Vertical align</a>
+                <a href="./text-decoration" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text decoration</a>
+                <a href="./font-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font style</a>
+                <a href="./font-weight" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font weight</a>
+                <a href="./text-transform" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text transform</a>
+                <a href="./border-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border style</a>
+                <a href="./border-width" class="text-gray-600 block line-none text-500 " style="margin-bottom: 8px; font-size: 15px;">Border width</a>
+                <a href="./border-radius" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border radius</a>
+                <a href="./overflow" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Overflow</a>
+                <a href="./text-align" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text align</a>
+                <a href="./rotate" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Rotate</a>
+                <a href="./display" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Display</a>
+                <a href="./fill" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">SVG fill</a>
+                <a href="./stroke-width" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">Stroke width</a>
+                <a href="./user-select" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">user select</a>
+                <a href="./cursor" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">cursor</a>
+                <a href="./float" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">float</a>
+            </div>
+            <div style="margin-bottom: 100px;">
+                <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Design Class</p>
+                <a href="./badge" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Badge</a>
+                <a href="./note" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Note</a>
+                <a href="./btn" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">button</a>
+                <a href="./code" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Code</a>
+            </div>
+        </div>
+        <div style="margin-top: 100px; margin-left: 25%;margin-right: 20%; margin-bottom: 150px;">
+            <h1>Background Color</h1>
+            <p style="font-size: 20px;">You can apply the videt color system to the background.</p>
+            <table class="table max-h-250">
+                <thead>
+                  <tr>
+                    <th class="text-blue-500">Class</th>
+                    <th class="text-purple-500">Properties</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="text-blue-500">border-black</td>
+                      <td class="text-purple-500">border-color:#000;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-white</td>
+                      <td class="text-purple-500">border-color:#fff;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue</td>
+                      <td class="text-purple-500">border-color:#00F;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-50</td>
+                      <td class="text-purple-500">border-color:#EFF6FF;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-100</td>
+                      <td class="text-purple-500">border-color:#DBEAFE;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-200</td>
+                      <td class="text-purple-500">border-color:#BFDBFE;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-300</td>
+                      <td class="text-purple-500">border-color:#93C5FD;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-400</td>
+                      <td class="text-purple-500">border-color:#60A5FA;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-500</td>
+                      <td class="text-purple-500">border-color:#3B82F6;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-600</td>
+                      <td class="text-purple-500">border-color:#2563EB;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-700</td>
+                      <td class="text-purple-500">border-color:#1D4ED8;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-800</td>
+                      <td class="text-purple-500">border-color:#1E40AF;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-blue-900</td>
+                      <td class="text-purple-500">border-color:#1E3A8A;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray</td>
+                      <td class="text-purple-500">border-color:gray;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-50</td>
+                      <td class="text-purple-500">border-color:#FAFAFA;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-100</td>
+                      <td class="text-purple-500">border-color:#F4F4F5;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-200</td>
+                      <td class="text-purple-500">border-color:#E4E4E7;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-300</td>
+                      <td class="text-purple-500">border-color:#D4D4D8;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-400</td>
+                      <td class="text-purple-500">border-color:#A1A1AA;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-500</td>
+                      <td class="text-purple-500">border-color:#71717A;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-600</td>
+                      <td class="text-purple-500">border-color:#52525B;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-700</td>
+                      <td class="text-purple-500">border-color:#3F3F46;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-800</td>
+                      <td class="text-purple-500">border-color:#27272A;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-gray-900</td>
+                      <td class="text-purple-500">border-color:#18181B;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green</td>
+                      <td class="text-purple-500">border-color:#0f0;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-50</td>
+                      <td class="text-purple-500">border-color:#F0FDF4;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-100</td>
+                      <td class="text-purple-500">border-color:#DCFCE7;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-200</td>
+                      <td class="text-purple-500">border-color:#BBF7D0;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-300</td>
+                      <td class="text-purple-500">border-color:#86EFAC;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-400</td>
+                      <td class="text-purple-500">border-color:#4ADE80;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-500</td>
+                      <td class="text-purple-500">border-color:#22C55E;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-600</td>
+                      <td class="text-purple-500">border-color:#16A34A;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-700</td>
+                      <td class="text-purple-500">border-color:#15803D;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-800</td>
+                      <td class="text-purple-500">border-color:#166534;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-green-900</td>
+                      <td class="text-purple-500">border-color:#14532D;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink</td>
+                      <td class="text-purple-500">border-color:#FFC0CB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-50</td>
+                      <td class="text-purple-500">border-color:#FDF2F8;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-100</td>
+                      <td class="text-purple-500">border-color:#FCE7F3;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-200</td>
+                      <td class="text-purple-500">border-color:#FBCFE8;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-300</td>
+                      <td class="text-purple-500">border-color:#F9A8D4;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-400</td>
+                      <td class="text-purple-500">border-color:#F472B6;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-500</td>
+                      <td class="text-purple-500">border-color:#EC4899;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-600</td>
+                      <td class="text-purple-500">border-color:#DB2777;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-700</td>
+                      <td class="text-purple-500">border-color:#BE185D;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-800</td>
+                      <td class="text-purple-500">border-color:#9D174D;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-pink-900</td>
+                      <td class="text-purple-500">border-color:#831843;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple</td>
+                      <td class="text-purple-500">border-color:purple;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-50</td>
+                      <td class="text-purple-500">border-color:#FAF5FF;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-100</td>
+                      <td class="text-purple-500">border-color:#F3E8FF;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-200</td>
+                      <td class="text-purple-500">border-color:#E9D5FF;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-300</td>
+                      <td class="text-purple-500">border-color:#D8B4FE;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-400</td>
+                      <td class="text-purple-500">border-color:#C084FC;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-500</td>
+                      <td class="text-purple-500">border-color:#A855F7;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-600</td>
+                      <td class="text-purple-500">border-color:#9333EA;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-700</td>
+                      <td class="text-purple-500">border-color:#7E22CE;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-800</td>
+                      <td class="text-purple-500">border-color:#6B21A8;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-purple-900</td>
+                      <td class="text-purple-500">border-color:#581C87;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red</td>
+                      <td class="text-purple-500">border-color:red;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-50</td>
+                      <td class="text-purple-500">border-color:#FEF2F2;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-100</td>
+                      <td class="text-purple-500">border-color:#FEE2E2;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-200</td>
+                      <td class="text-purple-500">border-color:#FECACA;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-300</td>
+                      <td class="text-purple-500">border-color:#FCA5A5;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-400</td>
+                      <td class="text-purple-500">border-color:#F87171;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-500</td>
+                      <td class="text-purple-500">border-color:#EF4444;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-600</td>
+                      <td class="text-purple-500">border-color:#DC2626;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-700</td>
+                      <td class="text-purple-500">border-color:#B91C1C;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-800</td>
+                      <td class="text-purple-500">border-color:#991B1B;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-red-900</td>
+                      <td class="text-purple-500">border-color:#7F1D1D;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow</td>
+                      <td class="text-purple-500">border-color:#ff0;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-50</td>
+                      <td class="text-purple-500">border-color:#FEFCE8;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-100</td>
+                      <td class="text-purple-500">border-color:#FEF9C3;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-200</td>
+                      <td class="text-purple-500">border-color:#FEF08A;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-300</td>
+                      <td class="text-purple-500">border-color:#FDE047;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-400</td>
+                      <td class="text-purple-500">border-color:#FACC15;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-500</td>
+                      <td class="text-purple-500">border-color:#EAB308;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-600</td>
+                      <td class="text-purple-500">border-color:#CA8A04;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-700</td>
+                      <td class="text-purple-500">border-color:#A16207;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-800</td>
+                      <td class="text-purple-500">border-color:#854D0E;</td>
+                    </tr>
+                    <tr>
+                      <td class="text-blue-500">border-yellow-900</td>
+                      <td class="text-purple-500">border-color:#713F12;</td>
+                    </tr>
+                  </tbody>
+            </table>
+            <h2>use</h2>
+            <p>You can apply and apply <span class="text-blue-500">"border-{color}"</span> to the object's class. </p>
+            <div class="code-view">
+                <div class="view">
+                    <a class="btn border-3 border-solid border-yellow-400">Button</a>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;a&gt; class="btn  </span><span class="text-blue-400">border-yellow-400</span> <span class="text-gray-400"> ... ">Button&lt;/a&gt;</span>
+                </code>
+            </div>
+            <h3>hover</h3>
+            <p>Put <span class="text-purple-600">"hover:"</span> before the object class. </p>
+            <div class="code-view">
+                <div class="view">
+                    <a class="btn border-3 border-solid border-green-400 hover:border-green-500">Button</a>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;a&gt; class="btn </span><span class="text-blue-400">hover:border-green-500</span> <span class="text-gray-400"> ... ">Button&lt;/a&gt;</span>
+                </code>
+            </div>
+            <h3>active</h3>
+            <p>Put <span class="text-purple-600">"active:"</span> before the object class. </p>
+            <div class="code-view">
+                <div class="view">
+                    <a class="btn border-3 border-solid border-purple-400 hover:border-purple-500 active:border-purple-600">Button</a>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;a&gt; class="btn </span><span class="text-blue-400">active:bg-purple-600</span> <span class="text-gray-400"> ... ">Button&lt;/a&gt;</span>
+                </code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
