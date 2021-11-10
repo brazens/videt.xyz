@@ -7,43 +7,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="./icon.png">
     <title>Videt CSS</title>
     <link rel="stylesheet" href="./videt.css">
+    <link rel="stylesheet" href="./style.css">
     <meta property="og:title" content="Videt CSS">
     <meta property="og:description" content="videt is a framework designed to make web design easier. Utility class and pre-designed class are provided. ">
     <meta property="og:url" content="https://videt.xyz">
     <meta property="og:site_name" content="videt CSS">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://videt.xyz/logo.jpg">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-        body{
-            font-family: 'Roboto', sans-serif;
-        }
-        .sticky {
-        position: fixed;
-        top: 0;
-        height: 50px;
-        width: 80%;
-        }
-        .side{
-            margin: 0;
-            padding: 3%;
-            width: 12%;
-            position: fixed;
-            top: 50px;
-            height: 90%;
-            overflow: auto;
-        }
-        .side::-webkit-scrollbar {
-            width: 7px;
-        }
-        .side::-webkit-scrollbar-thumb {
-            background-color: #52555c;
-            border-radius: 9999px;
-        }
-        .side::-webkit-scrollbar-track {
-            background-color: rgb(230, 230, 230);
-        }
-    </style>
 </head>
 <body>
     <div class="text-gray-100 block sticky" style="padding-left: 10%; padding-right: 10%;;">
@@ -101,7 +71,7 @@
                 <a href="./code" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Code</a>
             </div>
         </div>
-        <div style="margin-top: 100px; margin-left: 25%;margin-right: 20%; margin-bottom: 150px;">
+        <div class="main">
             <h1>Background Color</h1>
             <p style="font-size: 20px;">You can apply the videt color system to the background.</p>
             <table class="table max-h-250">
@@ -437,7 +407,7 @@
                     <a class="btn bg-gray-700 text-yellow-400">Button</a>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;a class="btn bg-gray-700 </span><span class="text-blue-400">text-yellow-400</span><span class="text-gray-400">">Button&lt;/a&gt;</span>
+                    <span class="text-gray-400">&lt;a&gt; class="btn bg-gray-700 </span><span class="text-blue-400">text-yellow-400</span><span class="text-gray-400">">Button&lt;/a&gt;</span>
                 </code>
             </div>
             <h3>hover</h3>
@@ -447,7 +417,7 @@
                     <a class="btn bg-gray-900 text-green-400 hover:text-green-500">Button</a>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;a class="btn bg-gray-900 text-green-400 </span><span class="text-blue-400">hover:text-green-500</span><span class="text-gray-400">">Button&lt;/a&gt;</span>
+                    <span class="text-gray-400">&lt;a&gt; class="btn bg-gray-900 text-green-400 </span><span class="text-blue-400">hover:text-green-500</span><span class="text-gray-400">">Button&lt;/a&gt;</span>
                 </code>
             </div>
             <h3>active</h3>
@@ -457,7 +427,7 @@
                     <a class="btn bg-black text-purple-400 hover:text-purple-500 active:text-purple-600">Button</a>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;a class="btn bg-black text-purple-400 hover:text-purple-500 </span><span class="text-blue-400">active:text-purple-600</span><span class="text-gray-400">">Button&lt;/a&gt;</span>
+                    <span class="text-gray-400">&lt;a&gt; class="btn bg-black text-purple-400 hover:text-purple-500 </span><span class="text-blue-400">active:text-purple-600</span><span class="text-gray-400">">Button&lt;/a&gt;</span>
                 </code>
             </div>
         </div>

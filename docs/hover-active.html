@@ -7,43 +7,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="./icon.png">
     <title>Videt CSS</title>
     <link rel="stylesheet" href="./videt.css">
+    <link rel="stylesheet" href="./style.css">
     <meta property="og:title" content="Videt CSS">
     <meta property="og:description" content="videt is a framework designed to make web design easier. Utility class and pre-designed class are provided. ">
     <meta property="og:url" content="https://videt.xyz">
     <meta property="og:site_name" content="videt CSS">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://videt.xyz/logo.jpg">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-        body{
-            font-family: 'Roboto', sans-serif;
-        }
-        .sticky {
-        position: fixed;
-        top: 0;
-        height: 50px;
-        width: 80%;
-        }
-        .side{
-            margin: 0;
-            padding: 3%;
-            width: 12%;
-            position: fixed;
-            top: 50px;
-            height: 90%;
-            overflow: auto;
-        }
-        .side::-webkit-scrollbar {
-            width: 7px;
-        }
-        .side::-webkit-scrollbar-thumb {
-            background-color: #52555c;
-            border-radius: 9999px;
-        }
-        .side::-webkit-scrollbar-track {
-            background-color: rgb(230, 230, 230);
-        }
-    </style>
 </head>
 <body>
     <div class="bg-gray-100 block sticky" style="padding-left: 10%; padding-right: 10%;;">
@@ -101,7 +71,7 @@
                 <a href="./code" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Code</a>
             </div>
         </div>
-        <div style="margin-top: 100px; margin-left: 25%;margin-right: 20%; margin-bottom: 150px;">
+        <div class="main">
             <h1>Hover, Active</h1>
             <p style="font-size: 20px;">It can be used by adding a state transition prefix to the videt utility class name. </p>
 

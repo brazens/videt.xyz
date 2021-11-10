@@ -967,6 +967,7 @@ p{
 .line-through{text-decoration: line-through;}
 .line-top{text-decoration: overline;}
 .line-none{text-decoration: none;}
+.line-tb{text-decoration: underline overline;}
 /* opacity */
 .opacity-0,.hover\:opacity-0:hover,.active\:opacity-0:active{opacity:0;}
 .opacity-5,.hover\:opacity-5:hover,.active\:opacity-5:active{opacity:0.05;}
@@ -1235,6 +1236,13 @@ p{
 .max-h-240{max-height: 24rem;}
 .max-h-250{max-height: 25rem;}
 .max-h-full{max-height: 100%;}
+/* align-items */
+.items-start{align-items: flex-start;}
+.items-end{align-items: flex-end;}
+.items-center{align-items: center;}
+.items-stretch{align-items: stretch;}
+.items-baseline{align-items: baseline;}
+
 /* design class */
 /* badge */
 .badge{

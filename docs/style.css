@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.sticky {
+position: fixed;
+top: 0;
+height: 50px;
+width: 80%;
+}
+.side{
+    margin: 0;
+    padding: 3%;
+    width: 12%;
+    position: fixed;
+    top: 50px;
+    height: 90%;
+    overflow: auto;
+}
+.side::-webkit-scrollbar {
+    width: 7px;
+}
+.side::-webkit-scrollbar-thumb {
+    background-color: #52555c;
+    border-radius: 9999px;
+}
+.side::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+}
+.main{
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 150px;
+}
+@media screen and (max-width: 780px){
+    .side{
+        margin-top: 100px;
+        display: block;
+        width: 100%;
+        position: static;
+    }
+    .main{
+        display: block;
+        margin-top: 10px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 150px;
+    }
+}
