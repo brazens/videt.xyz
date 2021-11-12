@@ -49,8 +49,8 @@
                 <a href="./text-decoration" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text decoration</a>
                 <a href="./font-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font style</a>
                 <a href="./font-weight" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font weight</a>
-                <a href="./text-transform" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text transform</a>
-                <a href="./border-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border style</a>
+                <a href="./text-transform" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text transform</a>
+                <a href="./border-style" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border style</a>
                 <a href="./border-width" class="text-gray-600 block line-none text-500 " style="margin-bottom: 8px; font-size: 15px;">Border width</a>
                 <a href="./border-radius" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border radius</a>
                 <a href="./overflow" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Overflow</a>
@@ -73,8 +73,8 @@
         </div>
         
         <div class="main">
-            <h1>Text transform</h1>
-            <p style="font-size: 20px;">This utility class can be used to display text in all uppercase or lowercase letters, or to capitalize each word. </p>
+            <h1>Border style</h1>
+            <p style="font-size: 20px;">This utility class specifies the border styles. </p>
             <table class="table max-h-250">
                 <thead>
                   <tr>
@@ -84,65 +84,136 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="text-blue-500">none-case</td>
-                        <td class="text-purple-500">text-transform: none;</td>
+                        <td class="text-blue-500">border-none</td>
+                        <td class="text-purple-500">border-style: none;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">upercase</td>
-                        <td class="text-purple-500">text-transform: uppercase;</td>
+                        <td class="text-blue-500">border-dotted</td>
+                        <td class="text-purple-500">border-style: dotted;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">lowercase</td>
-                        <td class="text-purple-500">text-transform: lowercase;</td>
+                        <td class="text-blue-500">border-dashed</td>
+                        <td class="text-purple-500">border-style: dashed;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">capitalize</td>
-                        <td class="text-purple-500">text-transform: capitalize;</td>
+                        <td class="text-blue-500">border-solid</td>
+                        <td class="text-purple-500">border-style: solid;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">border-double</td>
+                        <td class="text-purple-500">border-style: double;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">border-groove</td>
+                        <td class="text-purple-500">border-style: groove;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">border-ridge</td>
+                        <td class="text-purple-500">border-style: ridge;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">border-inset</td>
+                        <td class="text-purple-500">border-style: inset;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">border-outset</td>
+                        <td class="text-purple-500">border-style: outset;</td>
                     </tr>
                   </tbody>
             </table>
             <p class="h2">use</p>
-            <p>Converts text to uppercase and lowercase. </p>
+            <p>Describes the style of the border. </p>
             <h2>None</h2>
-            <p>use it by including <pan class="text-blue-500">"none-case"</pan> in your class.<br>Is a class that prevents the case of all characters from being changed.</p>
+            <p>use it by including <pan class="text-blue-500">"border-none"</pan> in your class.<br>Does not display borders. </p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold none-case">Weak things united become strong. </p>
+                    <p class="t1 text-bold border-none border-4 border-green-500 inline-block p-5 edge-20">You may delay, but time will not.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">none-case</span> <span class="text-gray-400"> ... "> Weak things united become strong.   &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-none</span> <span class="text-gray-400"> ... "> You may delay, but time will not. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Upercase</h2>
-            <p>use it by including <pan class="text-blue-500">"upercase"</pan> in your class.<br>Is a class that converts all characters to uppercase.</p>
+            <h2>Dotted</h2>
+            <p>use it by including <pan class="text-blue-500">"border-dotted"</pan> in your class.<br>Draw the border with multiple round dots.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold upercase">We never know the worth of water till the well is dry.</p>
+                    <p class="t1 text-bold border-dotted border-4 border-green-500 inline-block p-5 edge-20">We give advice, but we cannot give conduct. </p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">upercase</span> <span class="text-gray-400"> ... "> We never know the worth of water till the well is dry.  &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-dotted</span> <span class="text-gray-400"> ... "> We give advice, but we cannot give conduct. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Lowercase</h2>
-            <p>use it by including <pan class="text-blue-500">"lowercase"</pan> in your class.<br>Is a class that converts all characters to lowercase.</p>
+            <h2>Dashed</h2>
+            <p>use it by including <pan class="text-blue-500">"border-dashed"</pan> in your class.<br>Draw borders with multiple rectangles.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold lowercase">Error is the discipline through which we advance. </p>
+                    <p class="t1 text-bold border-dashed border-4 border-green-500 inline-block p-5 edge-20">A Penny Saved is a Penny Earned.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">lowercase</span> <span class="text-gray-400"> ... "> Error is the discipline through which we advance.  &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-dashed</span> <span class="text-gray-400"> ... "> A Penny Saved is a Penny Earned. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Capitalize</h2>
-            <p>use it by including <pan class="text-blue-500">"capitalize"</pan> in your class.<br>Is a class that converts the first letter of each word to uppercase.</p>
+            <h2>Solid</h2>
+            <p>use it by including <pan class="text-blue-500">"border-solid"</pan> in your class.<br>Draw the border with a single straight line.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold capitalize">Replace fear of the unknown with curiosity.</p>
+                    <p class="t1 text-bold border-solid border-4 border-green-500 inline-block p-5 edge-20">Never ruin an apology with an excuse.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">capitalize</span> <span class="text-gray-400"> ... "> Replace fear of the unknown with curiosity. &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-solid</span> <span class="text-gray-400"> ... "> Never ruin an apology with an excuse. &lt;/p&gt;</span><br>
                 </code>
             </div>
+            <h2>Double</h2>
+            <p>use it by including <pan class="text-blue-500">"border-double"</pan> in your class.<br>Draw the border with two parallel straight lines.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-double border-4 border-green-500 inline-block p-5 edge-20">We are all born ignorant, but one must work hard to remain stupid.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-double</span> <span class="text-gray-400"> ... "> We are all born ignorant, but one must work hard to remain stupid. &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <h2>Groove</h2>
+            <p>use it by including <pan class="text-blue-500">"border-groove"</pan> in your class.<br>Draw borders as if they were recessed. The opposite of ridge.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-groove border-4 border-green-500 inline-block p-5 edge-20">Well done is better than well said.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-groove</span> <span class="text-gray-400"> ... "> Well done is better than well said. &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <h2>Ridge</h2>
+            <p>use it by including <pan class="text-blue-500">"border-ridge"</pan> in your class.<br>Draw the border as if it were sticking out. The opposite of groove.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-ridge border-4 border-green-500 inline-block p-5 edge-20">There was never a bad peace or a good war.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-ridge</span> <span class="text-gray-400"> ... "> There was never a bad peace or a good war. &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <h2>Inset</h2>
+            <p>use it by including <pan class="text-blue-500">"border-inset"</pan> in your class.<br>Draws the border as if the element was dug. The opposite of outset. </p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-inset border-4 border-green-500 inline-block p-5 edge-20">Love your Enemies, for they tell you your Faults.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-inset</span> <span class="text-gray-400"> ... "> Love your Enemies, for they tell you your Faults. &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <h2>Outset</h2>
+            <p>use it by including <pan class="text-blue-500">"border-outset"</pan> in your class.<br>Draws the border as if the element was dug. The opposite of outset. </p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-outset border-4 border-green-500 inline-block p-5 edge-20">Never leave till tomorrow that which you can do today.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-outset</span> <span class="text-gray-400"> ... "> Never leave till tomorrow that which you can do today. &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <p>All examples are quotes from <a href="https://en.wikipedia.org/wiki/Benjamin_Franklin" class="text-blue-500 line-none">Benjamin Franklin</a></p>
         </div>
     </div>
 </body>
