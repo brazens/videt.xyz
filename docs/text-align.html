@@ -67,9 +67,9 @@
             <div style="margin-bottom: 20px;">   
                 <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Typography</p>
                 <a href="./font-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font style</a>
-                <a href="./font-weight" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font weight</a>
+                <a href="./font-weight" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Font weight</a>
                 <a href="./text-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text Colors</a>
-                <a href="./text-align" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text align</a>
+                <a href="./text-align" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text align</a>
                 <a href="./text-decoration" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text decoration</a>
                 <a href="./text-transform" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Text transform</a>
             </div>
@@ -100,8 +100,8 @@
             </div>
         </div>
         <div class="main">
-            <h1>Font weight</h1>
-            <p style="font-size: 20px;">This utility class specifies the weight or boldness of a font. </p>
+            <h1>Text align</h1>
+            <p style="font-size: 20px;">This utility class sets the horizontal alignment of a block element or cell box in a table.</p>
             <table class="table max-h-250">
                 <thead>
                   <tr>
@@ -111,91 +111,66 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="text-blue-500">text-100</td>
-                        <td class="text-purple-500">font-weight: 100;</td>
+                        <td class="text-blue-500">text-left</td>
+                        <td class="text-purple-500">text-align: left;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">text-200</td>
-                        <td class="text-purple-500">font-weight: 200;</td>
+                        <td class="text-blue-500">text-right</td>
+                        <td class="text-purple-500">text-align: right;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">text-300</td>
-                        <td class="text-purple-500">font-weight: 300;</td>
+                        <td class="text-blue-500">text-center</td>
+                        <td class="text-purple-500">text-align: center;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">text-400</td>
-                        <td class="text-purple-500">font-weight: 400;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-500</td>
-                        <td class="text-purple-500">font-weight: 500;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-600</td>
-                        <td class="text-purple-500">font-weight: 600;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-700</td>
-                        <td class="text-purple-500">font-weight: 700;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-800</td>
-                        <td class="text-purple-500">font-weight: 800;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-900</td>
-                        <td class="text-purple-500">font-weight: 900;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-bold</td>
-                        <td class="text-purple-500">font-weight: bold;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">text-bolder</td>
-                        <td class="text-purple-500">font-weight: bolder;</td>
+                        <td class="text-blue-500">text-justify</td>
+                        <td class="text-purple-500">text-align: justify;</td>
                     </tr>
                   </tbody>
             </table>
             <p class="h2">use</p>
             <p>You can set the thickness of the font. </p>
-            <h2>Value 100~900</h2>
-            <p>You can apply <pan class="text-blue-500">"text-*"</pan> to the object class.</p>
+            <h2>Left</h2>
+            <p>use it by including <pan class="text-blue-500">"text-left"</pan> in your class.<br>Aligns inline content to the left corner of the line box.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="h4 text-100">Life's not all gloom and despondency</p>
-                    <p class="h4 text-200">Life's not all gloom and despondency</p>
-                    <p class="h4 text-300">Life's not all gloom and despondency</p>
-                    <p class="h4 text-400">Life's not all gloom and despondency</p>
-                    <p class="h4 text-500">Life's not all gloom and despondency</p>
-                    <p class="h4 text-600">Life's not all gloom and despondency</p>
-                    <p class="h4 text-700">Life's not all gloom and despondency</p>
-                    <p class="h4 text-800">Life's not all gloom and despondency</p>
-                    <p class="h4 text-900">Life's not all gloom and despondency</p>
+                    <p class="t1 text-left text-bold">I am a slow walker, but I never walk back.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-100</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-200</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-300</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-400</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-500</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-600</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-700</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-800</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-900</span> <span class="text-gray-400"> ... "> Life's not all gloom and despondency &lt;/p&gt;</span>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-left</span> <span class="text-gray-400"> ... "> I am a slow walker, but I never walk back. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>bold and bolder</h2>
-            <p>You can apply <pan class="text-blue-500">"text-bold", "text-bolder"</pan> to the object class.</p>
+            <h2>Right</h2>
+            <p>use it by including <pan class="text-blue-500">"text-right"</pan> in your class.<br>Aligns inline content to the right corner of the line box. </p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold">Peace begins with a smile.</p>
-                    <p class="t1 text-bolder">Peace begins with a smile.</p>
+                    <p class="t1 text-right text-bold">Whatever you are, be a good one.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-bold</span> <span class="text-gray-400"> ... "> Peace begins with a smile. &lt;/p&gt;</span><br>
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-bolder</span> <span class="text-gray-400"> ... "> Peace begins with a smile. &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-right</span> <span class="text-gray-400"> ... "> Whatever you are, be a good one. &lt;/p&gt;</span><br>
                 </code>
             </div>
+            <h2>Center</h2>
+            <p>use it by including <pan class="text-blue-500">"text-center"</pan> in your class.<br>Aligns inline content to the center of the line box. </p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-center text-bold">Achievement has no color.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-center</span> <span class="text-gray-400"> ... "> Achievement has no color. &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <h2>Justify</h2>
+            <p>use it by including <pan class="text-blue-500">"text-justify"</pan> in your class.<br>Justify inline content. Spaces to fit text at the left and right ends of the line box, except for the last line. </p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-justify text-bold">You can have anything you want if you want it badly enough. You can be anything you want to be, do anything you set out to accomplish if you hold to that desire with singleness of purpose.</p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">text-justify</span> <span class="text-gray-400"> ... "> You can have anything you want if you want it badly enough. You can ... &lt;/p&gt;</span><br>
+                </code>
+            </div>
+            <p>All examples are quotes from <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln" class="text-blue-500 line-none">Abraham Lincoln</a></p>
         </div>
     </div>
 </body>
