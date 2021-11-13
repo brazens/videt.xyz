@@ -34,7 +34,7 @@
             </div>
             <div style="margin-bottom: 20px;">
                 <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Core Concepts</p>
-                <a href="./hover-active" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Hover, active</a>
+                <a href="./hover-active" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Hover, active</a>
                 <a href="./utility-class" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Utility class</a>
                 <a href="./design-class" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Design class</a>
                 <a href="./colors" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Colors</a>
@@ -77,8 +77,8 @@
                 <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Border</p>
                 <a href="./border-color" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border Colors</a>
                 <a href="./border-style" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border style</a>
-                <a href="./border-width" class="text-gray-600 block line-none text-500 " style="margin-bottom: 8px; font-size: 15px;">Border width</a>
-                <a href="./border-radius" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border radius</a>
+                <a href="./border-width" class="text-blue-500 block line-none text-500 " style="margin-bottom: 8px; font-size: 15px;">Border width</a>
+                <a href="./ class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Border radius</a>
             </div>
             <div style="margin-bottom: 30px;">   
                 <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">SVG</p>
@@ -99,48 +99,179 @@
                 <a href="./animation-Pushe" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Pushe</a>
             </div>
         </div>
+        
         <div class="main">
-            <h1>Hover, Active</h1>
-            <p style="font-size: 20px;">It can be used by adding a state transition prefix to the videt utility class name. </p>
-
-            <h2>Hover</h2>
-            <p>Just add <span class="text-red-500">"hover:"</span> in front of it and you can use it. </p>
+            <h1>Border radius</h1>
+            <p style="font-size: 20px;">This utility class rounds the vertices of the border of an element's border. </p>
+            <table class="table max-h-250">
+                <thead>
+                  <tr>
+                    <th class="text-blue-500">Value</th>
+                    <th class="text-purple-500">CSS Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-blue-500">0</td>
+                        <td class="text-purple-500">0;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">5</td>
+                        <td class="text-purple-500">.05rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">10</td>
+                        <td class="text-purple-500">.1rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">20</td>
+                        <td class="text-purple-500">.2rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">30</td>
+                        <td class="text-purple-500">.3rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">35</td>
+                        <td class="text-purple-500">.35rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">40</td>
+                        <td class="text-purple-500">.4rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">50</td>
+                        <td class="text-purple-500">.5rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">60</td>
+                        <td class="text-purple-500">.6rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">70</td>
+                        <td class="text-purple-500">.7rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">75</td>
+                        <td class="text-purple-500">.75rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">80</td>
+                        <td class="text-purple-500">.8rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">90</td>
+                        <td class="text-purple-500">.9rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">95</td>
+                        <td class="text-purple-500">.95rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">100</td>
+                        <td class="text-purple-500">1.25rem;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">max</td>
+                        <td class="text-purple-500">9999px;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-500">full</td>
+                        <td class="text-purple-500">9999px;</td>
+                    </tr>
+                  </tbody>
+            </table>
+            <p class="h2">use</p>
+            <p>Specifies the border width.</p>
+            <p>use it by including <pan class="text-blue-500">"edge-{value}"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <a class="btn bg-purple-500 hover:bg-purple-600 text-white">Hover Button</a>
+                    <p class="t1 text-bold border-solid border-9 border-gray-700 inline-block p-5 edge-50 bg-gray-700 w-50 h-50"></p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-500">&lt;a class="btn </span><span class="text-purple-400">bg-purple-500 hover:bg-purple-600</span> <span class="text-gray-500">text-white"&gt;Hover Button&lt;/a&gt;</span>
-                </code>
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">border-4</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
             </div>
-            <p>It can be used in the following utility classes. </p>
-            <ul>
-                <li><a href="https://videt.xyz/docs/background-color" class="line-none text-blue-600 text-500">background colors</a></li>
-                <li><a href="https://videt.xyz/docs/text-color" class="line-none text-blue-600 text-500">text color</a></li>
-                <li><a href="https://videt.xyz/docs/fill" class="line-none text-blue-600 text-500">SVG fill</a></li>
-                <li><a href="https://videt.xyz/docs/border-color" class="line-none text-blue-600 text-500">border color</a></li>
-                <li><a href="https://videt.xyz/docs/opacity" class="line-none text-blue-600 text-500">opacity</a></li>
-                <li><a href="https://videt.xyz/docs/cursor" class="line-none text-blue-600 text-500">cursor</a></li>
-            </ul>
-            <h2>Active</h2>
-            <p>Just add <span class="text-red-500">"active:"</span> in front of it and you can use it. </p>
+            <h2>Top</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-t-{value}"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <a class="btn bg-green-500 active:bg-green-600 text-white">Hover Button</a>
+                    <p class="t1 text-bold border-solid border-9 border-black inline-block p-5 edge-t-50 bg-black w-50 h-50"></p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-500">&lt;a class="btn </span><span class="text-green-400">bg-green-500 active:bg-green-600</span> <span class="text-gray-500">text-white"&gt;Hover Button&lt;/a&gt;</span>
-                </code>
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">t-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
             </div>
-            <p>It can be used in the following utility classes. </p>
-            <ul>
-                <li><a href="https://videt.xyz/docs/background-color" class="line-none text-blue-600 text-500">background colors</a></li>
-                <li><a href="https://videt.xyz/docs/text-color" class="line-none text-blue-600 text-500">text color</a></li>
-                <li><a href="https://videt.xyz/docs/fill" class="line-none text-blue-600 text-500">SVG fill</a></li>
-                <li><a href="https://videt.xyz/docs/border-color" class="line-none text-blue-600 text-500">border color</a></li>
-                <li><a href="https://videt.xyz/docs/opacity" class="line-none text-blue-600 text-500">opacity</a></li>
-                <li><a href="https://videt.xyz/docs/cursor" class="line-none text-blue-600 text-500">cursor</a></li>
-            </ul>
+            <h2>Top left</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-tl-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-red-500 inline-block p-5 edge-tl-50 bg-red-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">tl-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
+            <h2>Top right</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-tr-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-pink-500 inline-block p-5 edge-tr-50 bg-pink-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">tr-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
+            <h2>Bottom</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-b-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-gray-500 inline-block p-5 edge-b-50 bg-gray-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">b-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
+            <h2>Bottom left</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-bl-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-green-500 inline-block p-5 edge-bl-50 bg-green-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">bl-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
+            <h2>Bottom right</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-br-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-yellow-500 inline-block p-5 edge-br-50 bg-yellow-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">br-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
+            <h2>Left</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-l-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-purple-500 inline-block p-5 edge-l-50 bg-purple-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">l-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
+            <h2>Right</h2>
+            <p>use it by including <pan class="text-blue-500">"edge-r-{value}"</pan> in your class.</p>
+            <div class="code-view">
+                <div class="view">
+                    <p class="t1 text-bold border-solid border-9 border-blue-500 inline-block p-5 edge-r-50 bg-blue-500 w-50 h-50"></p>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">r-50</span> <span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                </code> 
+            </div>
         </div>
     </div>
 </body>
