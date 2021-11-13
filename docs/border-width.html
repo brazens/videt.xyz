@@ -112,136 +112,79 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="text-blue-500">border-none</td>
-                        <td class="text-purple-500">border-style: none;</td>
+                        <td class="text-blue-500">border-1~9</td>
+                        <td class="text-purple-500">border-width: 1~9px;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">border-dotted</td>
-                        <td class="text-purple-500">border-style: dotted;</td>
+                        <td class="text-blue-500">border-t-1~9</td>
+                        <td class="text-purple-500">border-top-width: 1~9px;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">border-dashed</td>
-                        <td class="text-purple-500">border-style: dashed;</td>
+                        <td class="text-blue-500">border-b-1~9</td>
+                        <td class="text-purple-500">border-bottom-width: 1~9px;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">border-solid</td>
-                        <td class="text-purple-500">border-style: solid;</td>
+                        <td class="text-blue-500">border-l-1~9</td>
+                        <td class="text-purple-500">border-left-width: 1~9px;</td>
                     </tr>
                     <tr>
-                        <td class="text-blue-500">border-double</td>
-                        <td class="text-purple-500">border-style: double;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">border-groove</td>
-                        <td class="text-purple-500">border-style: groove;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">border-ridge</td>
-                        <td class="text-purple-500">border-style: ridge;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">border-inset</td>
-                        <td class="text-purple-500">border-style: inset;</td>
-                    </tr>
-                    <tr>
-                        <td class="text-blue-500">border-outset</td>
-                        <td class="text-purple-500">border-style: outset;</td>
+                        <td class="text-blue-500">border-r-1~9</td>
+                        <td class="text-purple-500">border-right-width: 1~9px;</td>
                     </tr>
                   </tbody>
             </table>
             <p class="h2">use</p>
-            <p>Describes the style of the border. </p>
-            <h2>None</h2>
-            <p>use it by including <pan class="text-blue-500">"border-none"</pan> in your class.<br>Does not display borders. </p>
+            <p>Specifies the border width.</p>
+            <p>use it by including <pan class="text-blue-500">"border-*"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold border-none border-4 border-green-500 inline-block p-5 edge-20">You may delay, but time will not.</p>
+                    <p class="t1 text-bold border-solid border-4 border-gray-500 inline-block p-5 edge-20">It is better to offer no excuse than a bad one.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-none</span> <span class="text-gray-400"> ... "> You may delay, but time will not. &lt;/p&gt;</span><br>
-                </code>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-4</span> <span class="text-gray-400"> ... "> It is better to offer no excuse than a bad one. &lt;/p&gt;</span><br>
+                </code> 
             </div>
-            <h2>Dotted</h2>
-            <p>use it by including <pan class="text-blue-500">"border-dotted"</pan> in your class.<br>Draw the border with multiple round dots.</p>
+            <h2>Top</h2>
+            <p>use it by including <pan class="text-blue-500">"border-t-*"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold border-dotted border-4 border-green-500 inline-block p-5 edge-20">We give advice, but we cannot give conduct. </p>
+                    <p class="t1 text-bold border-solid border-t-4 border-0 border-gray-500 inline-block p-5">It is better to be alone than in bad company.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-dotted</span> <span class="text-gray-400"> ... "> We give advice, but we cannot give conduct. &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-t-4</span> <span class="text-gray-400"> ... "> It is better to be alone than in bad company. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Dashed</h2>
-            <p>use it by including <pan class="text-blue-500">"border-dashed"</pan> in your class.<br>Draw borders with multiple rectangles.</p>
+            <h2>Bottom</h2>
+            <p>use it by including <pan class="text-blue-500">"border-b-*"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold border-dashed border-4 border-green-500 inline-block p-5 edge-20">A Penny Saved is a Penny Earned.</p>
+                    <p class="t1 text-bold border-solid border-b-4 border-0 border-gray-500 inline-block p-5">99% of failures come from people who make excuses.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-dashed</span> <span class="text-gray-400"> ... "> A Penny Saved is a Penny Earned. &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-b-4</span> <span class="text-gray-400"> ... "> 99% of failures come from people who make excuses. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Solid</h2>
-            <p>use it by including <pan class="text-blue-500">"border-solid"</pan> in your class.<br>Draw the border with a single straight line.</p>
+            <h2>Left</h2>
+            <p>use it by including <pan class="text-blue-500">"border-l-*"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold border-solid border-4 border-green-500 inline-block p-5 edge-20">Never ruin an apology with an excuse.</p>
+                    <p class="t1 text-bold border-solid border-l-4 border-0 border-gray-500 inline-block p-5 text-left">I hope I shall possess firmness and virtue enough to maintain what I consider the most enviable of all titles, the character of an honest man.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-solid</span> <span class="text-gray-400"> ... "> Never ruin an apology with an excuse. &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-l-4</span> <span class="text-gray-400"> ... "> I hope I shall possess firmness and virtue enough to ... &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Double</h2>
-            <p>use it by including <pan class="text-blue-500">"border-double"</pan> in your class.<br>Draw the border with two parallel straight lines.</p>
+            <h2>Right</h2>
+            <p>use it by including <pan class="text-blue-500">"border-r-*"</pan> in your class.</p>
             <div class="code-view">
                 <div class="view">
-                    <p class="t1 text-bold border-double border-4 border-green-500 inline-block p-5 edge-20">We are all born ignorant, but one must work hard to remain stupid.</p>
+                    <p class="t1 text-bold border-solid border-r-4 border-0 border-gray-500 inline-block p-5 text-right">Perseverance and spirit have done wonders in all ages.</p>
                 </div>
                 <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-double</span> <span class="text-gray-400"> ... "> We are all born ignorant, but one must work hard to remain stupid. &lt;/p&gt;</span><br>
+                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-r-4</span> <span class="text-gray-400"> ... "> Perseverance and spirit have done wonders in all ages. &lt;/p&gt;</span><br>
                 </code>
             </div>
-            <h2>Groove</h2>
-            <p>use it by including <pan class="text-blue-500">"border-groove"</pan> in your class.<br>Draw borders as if they were recessed. The opposite of ridge.</p>
-            <div class="code-view">
-                <div class="view">
-                    <p class="t1 text-bold border-groove border-4 border-green-500 inline-block p-5 edge-20">Well done is better than well said.</p>
-                </div>
-                <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-groove</span> <span class="text-gray-400"> ... "> Well done is better than well said. &lt;/p&gt;</span><br>
-                </code>
-            </div>
-            <h2>Ridge</h2>
-            <p>use it by including <pan class="text-blue-500">"border-ridge"</pan> in your class.<br>Draw the border as if it were sticking out. The opposite of groove.</p>
-            <div class="code-view">
-                <div class="view">
-                    <p class="t1 text-bold border-ridge border-4 border-green-500 inline-block p-5 edge-20">There was never a bad peace or a good war.</p>
-                </div>
-                <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-ridge</span> <span class="text-gray-400"> ... "> There was never a bad peace or a good war. &lt;/p&gt;</span><br>
-                </code>
-            </div>
-            <h2>Inset</h2>
-            <p>use it by including <pan class="text-blue-500">"border-inset"</pan> in your class.<br>Draws the border as if the element was dug. The opposite of outset. </p>
-            <div class="code-view">
-                <div class="view">
-                    <p class="t1 text-bold border-inset border-4 border-green-500 inline-block p-5 edge-20">Love your Enemies, for they tell you your Faults.</p>
-                </div>
-                <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-inset</span> <span class="text-gray-400"> ... "> Love your Enemies, for they tell you your Faults. &lt;/p&gt;</span><br>
-                </code>
-            </div>
-            <h2>Outset</h2>
-            <p>use it by including <pan class="text-blue-500">"border-outset"</pan> in your class.<br>Draws the border as if the element was dug. The opposite of outset. </p>
-            <div class="code-view">
-                <div class="view">
-                    <p class="t1 text-bold border-outset border-4 border-green-500 inline-block p-5 edge-20">Never leave till tomorrow that which you can do today.</p>
-                </div>
-                <code class="code">
-                    <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">border-outset</span> <span class="text-gray-400"> ... "> Never leave till tomorrow that which you can do today. &lt;/p&gt;</span><br>
-                </code>
-            </div>
-            <p>All examples are quotes from <a href="https://en.wikipedia.org/wiki/Benjamin_Franklin" class="text-blue-500 line-none">Benjamin Franklin</a></p>
+            <p>All examples are quotes from <a href="https://en.wikipedia.org/wiki/George_Washington" class="text-blue-500 line-none">George Washington</a></p>
         </div>
     </div>
 </body>
