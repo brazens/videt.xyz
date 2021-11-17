@@ -55,7 +55,7 @@
         </div>
         <div style="margin-bottom: 20px;">   
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Layout</p>
-            <a href="./display" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Display</a>
+            <a href="./display" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Display</a>
             <a href="./rotate" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Rotate</a>
             <a href="./user-select" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">user select</a>
             <a href="./cursor" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">cursor</a>
@@ -83,7 +83,7 @@
         <div style="margin-bottom: 30px;">   
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">SVG</p>
             <a href="./fill" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">SVG fill</a>
-            <a href="./stroke-width" class="text-blue-500 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">Stroke width</a>
+            <a href="./stroke-width" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">Stroke width</a>
         </div>
         <div style="margin-bottom: 25px;">
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Design Class</p>
@@ -100,8 +100,8 @@
         </div>
     </div>
         <div class="main">
-            <h1>Wtroke Width</h1>
-            <p style="font-size: 20px;">This property defines the width of the stroke to be applied to the SVG.</p>
+            <h1>Display</h1>
+            <p style="font-size: 20px;">This utility class formally sets the inner and outer display types of an element. The outer display type indicates how the element participates in the flow layout, and the inner display type sets how its children are laid out. </p>
             <table class="table max-h-250">
                 <thead>
                   <tr>
@@ -111,48 +111,156 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="text-blue-500">stroke-0</td>
-                    <td class="text-purple-500">stroke-width: 0;</td>
+                    <td class="text-blue-500">hide</td>
+                    <td class="text-purple-500">display:none;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">stroke-1</td>
-                    <td class="text-purple-500">stroke-width: 1;</td>
+                    <td class="text-blue-500">inline</td>
+                    <td class="text-purple-500">display:inline;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">stroke-2</td>
-                    <td class="text-purple-500">stroke-width: 2;</td>
+                    <td class="text-blue-500">block</td>
+                    <td class="text-purple-500">display:block;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">stroke-3<a href="./not-recommended" class="line-none"><span class="text-red-500 select-none"> [ not recommended ]</span></a></td>
-                    <td class="text-purple-500">stroke-width: 3;</td>
+                    <td class="text-blue-500">contents</td>
+                    <td class="text-purple-500">display:contents;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">stroke-4<a href="./not-recommended" class="line-none"><span class="text-red-500 select-none"> [ not recommended ]</span></a></td>
-                    <td class="text-purple-500">stroke-width: 4;</td>
+                    <td class="text-blue-500">flex</td>
+                    <td class="text-purple-500">display:flex;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">stroke-5<a href="./not-recommended" class="line-none"><span class="text-red-500 select-none"> [ not recommended ]</span></a></td>
-                    <td class="text-purple-500">stroke-width: 5;</td>
+                    <td class="text-blue-500">grid</td>
+                    <td class="text-purple-500">display:grid;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">inline--block</td>
+                    <td class="text-purple-500">display:inline-block;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">inline-flex</td>
+                    <td class="text-purple-500">display:inline-flex;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">inline-grid</td>
+                    <td class="text-purple-500">display:inline-grid;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">inline-table</td>
+                    <td class="text-purple-500">display:inline-table;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">list-item</td>
+                    <td class="text-purple-500">display:list-item;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">run-in</td>
+                    <td class="text-purple-500">display:run-in;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table</td>
+                    <td class="text-purple-500">display:table;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-caption</td>
+                    <td class="text-purple-500">display:table-caption;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-column-group</td>
+                    <td class="text-purple-500">display:table-column-group;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-header-group</td>
+                    <td class="text-purple-500">display:table-header-group;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-footer-group</td>
+                    <td class="text-purple-500">display:table-footer-group;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-row-group</td>
+                    <td class="text-purple-500">display:table-row-group;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-cell</td>
+                    <td class="text-purple-500">display:table-cell;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-column</td>
+                    <td class="text-purple-500">display:table-column;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">table-row</td>
+                    <td class="text-purple-500">display:table-row;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-blue-500">initial</td>
+                    <td class="text-purple-500">display:initial;</td>
                   </tr>
                 </tbody>
             </table>
-            <h2>use</h2>
-            <p>You can apply and apply <span class="text-blue-500">"stroke-{width}"</span> to the object's class. </p>
+            <h2>Hide</h2>
+            <p>You can apply <span class="text-blue-500">"hide"</span> to the object's class. </p>
             <div class="code-view">
                 <div class="view">
-                  <svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="5" cy="5" r="3" stroke="green" class="stroke-0"></circle>
-                    <circle cx="15" cy="5" r="3" stroke="green" class="stroke-1"></circle>
-                    <circle cx="25" cy="5" r="3" stroke="green" class="stroke-2"></circle>
-                  </svg>
+                  <div class="hide bg-green-100 p-20 edge-20">
+                    <span class="hide p-15 bg-green-400 edge-20 mb-5 text-white text-bold">1</span>
+                  </div>
                 </div>
                 <code class="code">
-                  <span class="text-gray-400">&lt;a class="</span><span class="text-blue-400">stroke-0</span><span class="text-gray-400"> ... "> ... &lt;/a&gt;</span><br>
-                    <span class="text-gray-400">&lt;a class="</span><span class="text-blue-400">stroke-1</span><span class="text-gray-400"> ... "> ... &lt;/a&gt;</span><br>
-                    <span class="text-gray-400">&lt;a class="</span><span class="text-blue-400">stroke-2</span><span class="text-gray-400"> ... "> ... &lt;/a&gt;</span>
+                    <span class="text-gray-400">&lt;span&gt; class="</span><span class="text-blue-400">hide</span><span class="text-gray-400"> ... "> 1 &lt;/span&gt;</span>
                 </code>
             </div>
-        </div>
-    </div>
+            <h2>Inline</h2>
+            <p>You can apply <span class="text-blue-500">"inline"</span> to the object's class. </p>
+            <div class="code-view">
+                <div class="view">
+                  <div class="bg-green-100 p-20 edge-20">
+                    <span class="inline p-15 bg-green-400 edge-20 mb-5 text-white text-bold">1</span>
+                    <span class="inline p-15 bg-green-400 edge-20 mb-5 text-white text-bold">2</span>
+                    <span class="inline p-15 bg-green-400 edge-20 mb-5 text-white text-bold">3</span>
+                    <span class="inline p-15 bg-green-400 edge-20 mb-5 text-white text-bold">4</span>
+                    <span class="inline p-15 bg-green-400 edge-20 mb-5 text-white text-bold">5</span>
+                  </div>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;span&gt; class="</span><span class="text-blue-400">inline</span><span class="text-gray-400"> ... "> 1 &lt;/span&gt;</span>
+                </code>
+            </div>
+            <h2>Block</h2>
+            <p>You can apply <span class="text-blue-500">"block"</span> to the object's class. </p>
+            <div class="code-view">
+                <div class="view">
+                  <div class="block bg-blue-100 p-20 edge-20">
+                    <span class="block p-15 bg-blue-400 edge-20 mb-5 text-white text-bold">1</span>
+                    <span class="block p-15 bg-blue-400 edge-20 mb-5 text-white text-bold">2</span>
+                    <span class="block p-15 bg-blue-400 edge-20 mb-5 text-white text-bold">3</span>
+                  </div>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;span class="</span><span class="text-blue-400">block</span><span class="text-gray-400"> ... "> 1 &lt;/span&gt;</span><br>
+                    <span class="text-gray-400">&lt;span class="</span><span class="text-blue-400">block</span><span class="text-gray-400"> ... "> 2 &lt;/span&gt;</span><br>
+                    <span class="text-gray-400">&lt;span class="</span><span class="text-blue-400">block</span><span class="text-gray-400"> ... "> 3 &lt;/span&gt;</span>
+                </code>
+            </div>
+            <h2>Inline block</h2>
+            <p>You can apply <span class="text-blue-500">"inline-block"</span> to the object's class. </p>
+            <div class="code-view">
+                <div class="view">
+                  <div class="block bg-purple-100 p-20 edge-20">
+                    <span class="inline-block p-15 bg-purple-400 edge-20 mb-5 text-white text-bold">1</span>
+                    <span class="inline-block p-15 bg-purple-400 edge-20 mb-5 text-white text-bold">2</span>
+                    <span class="inline-block p-15 bg-purple-400 edge-20 mb-5 text-white text-bold">3</span>
+                  </div>
+                </div>
+                <code class="code">
+                    <span class="text-gray-400">&lt;span class="</span><span class="text-blue-400">inline-block</span><span class="text-gray-400"> ... "> 1 &lt;/span&gt;</span><br>
+                    <span class="text-gray-400">&lt;span class="</span><span class="text-blue-400">inline-block</span><span class="text-gray-400"> ... "> 2 &lt;/span&gt;</span><br>
+                    <span class="text-gray-400">&lt;span class="</span><span class="text-blue-400">inline-block</span><span class="text-gray-400"> ... "> 3 &lt;/span&gt;</span>
+                </code>
+            </div>
+      </div>
+  </div>
 </body>
 </html>

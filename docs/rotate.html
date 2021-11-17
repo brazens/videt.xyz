@@ -56,7 +56,7 @@
         <div style="margin-bottom: 20px;">   
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Layout</p>
             <a href="./display" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Display</a>
-            <a href="./rotate" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Rotate</a>
+            <a href="./rotate" class="text-blue-500 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Rotate</a>
             <a href="./user-select" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">user select</a>
             <a href="./cursor" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">cursor</a>
             <a href="./float" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">float</a>
@@ -83,7 +83,7 @@
         <div style="margin-bottom: 30px;">   
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">SVG</p>
             <a href="./fill" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">SVG fill</a>
-            <a href="./stroke-width" class="text-blue-500 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">Stroke width</a>
+            <a href="./stroke-width" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">Stroke width</a>
         </div>
         <div style="margin-bottom: 25px;">
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Design Class</p>
@@ -100,8 +100,8 @@
         </div>
     </div>
         <div class="main">
-            <h1>Wtroke Width</h1>
-            <p style="font-size: 20px;">This property defines the width of the stroke to be applied to the SVG.</p>
+            <h1>Rotate</h1>
+            <p style="font-size: 20px;">This utility class rotates the contained object by the specified value. </p>
             <table class="table max-h-250">
                 <thead>
                   <tr>
@@ -111,45 +111,23 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="text-blue-500">stroke-0</td>
-                    <td class="text-purple-500">stroke-width: 0;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">stroke-1</td>
-                    <td class="text-purple-500">stroke-width: 1;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">stroke-2</td>
-                    <td class="text-purple-500">stroke-width: 2;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">stroke-3<a href="./not-recommended" class="line-none"><span class="text-red-500 select-none"> [ not recommended ]</span></a></td>
-                    <td class="text-purple-500">stroke-width: 3;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">stroke-4<a href="./not-recommended" class="line-none"><span class="text-red-500 select-none"> [ not recommended ]</span></a></td>
-                    <td class="text-purple-500">stroke-width: 4;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">stroke-5<a href="./not-recommended" class="line-none"><span class="text-red-500 select-none"> [ not recommended ]</span></a></td>
-                    <td class="text-purple-500">stroke-width: 5;</td>
+                    <td class="text-blue-500">rotate-{value}</td>
+                    <td class="text-purple-500">transform: rotate({value}deg);</td>
                   </tr>
                 </tbody>
             </table>
             <h2>use</h2>
-            <p>You can apply and apply <span class="text-blue-500">"stroke-{width}"</span> to the object's class. </p>
+            <p>You can apply <span class="text-blue-500">"rotate-{value}"</span> to the object's class.<br>Values from 1 to 360 are only applicable. </p>
             <div class="code-view">
                 <div class="view">
-                  <svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="5" cy="5" r="3" stroke="green" class="stroke-0"></circle>
-                    <circle cx="15" cy="5" r="3" stroke="green" class="stroke-1"></circle>
-                    <circle cx="25" cy="5" r="3" stroke="green" class="stroke-2"></circle>
-                  </svg>
+                  <div class="rotate-40 w-30 h-30 bg-blue-500 inline-block edge-20"></div>
+                  <div class="rotate-40 w-30 h-30 bg-green-500 inline-block edge-20"></div>
+                  <div class="rotate-40 w-30 h-30 bg-red-500 inline-block edge-20"></div>
                 </div>
                 <code class="code">
-                  <span class="text-gray-400">&lt;a class="</span><span class="text-blue-400">stroke-0</span><span class="text-gray-400"> ... "> ... &lt;/a&gt;</span><br>
-                    <span class="text-gray-400">&lt;a class="</span><span class="text-blue-400">stroke-1</span><span class="text-gray-400"> ... "> ... &lt;/a&gt;</span><br>
-                    <span class="text-gray-400">&lt;a class="</span><span class="text-blue-400">stroke-2</span><span class="text-gray-400"> ... "> ... &lt;/a&gt;</span>
+                  <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">rotate-40</span><span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">rotate-40</span><span class="text-gray-400"> ... "> ... &lt;/div&gt;</span><br>
+                    <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">rotate-40</span><span class="text-gray-400"> ... "> ... &lt;/div&gt;</span>
                 </code>
             </div>
         </div>
