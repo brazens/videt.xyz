@@ -1049,7 +1049,7 @@ p{
 .select-contain{user-select: contain;}
 .select-all{user-select: all;}
 /* float */
-.float-none{float: none}
+.float-none{float: none;}
 .float-left{float: left;}
 .float-right{float: right;}
 /* width */

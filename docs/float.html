@@ -57,9 +57,9 @@
             <p class="text-gray-500 text-500" style="margin-bottom: 8px; font-size: 15.5px;">Layout</p>
             <a href="./display" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Display</a>
             <a href="./rotate" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Rotate</a>
-            <a href="./user-select" class="text-blue-500 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">user select</a>
+            <a href="./user-select" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">user select</a>
             <a href="./cursor" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">cursor</a>
-            <a href="./float" class="text-gray-600 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">float</a>
+            <a href="./float" class="text-blue-500 block line-none text-500 text-500" style="margin-bottom: 8px; font-size: 15px;">float</a>
             <a href="./opacity" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Opacity</a>
             <a href="./vertical-align" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Vertical align</a>
             <a href="./overflow" class="text-gray-600 block line-none text-500" style="margin-bottom: 8px; font-size: 15px;">Overflow</a>
@@ -100,8 +100,8 @@
         </div>
     </div>
         <div class="main">
-            <h1>User Select</h1>
-            <p style="font-size: 20px;">This utility class specifies whether the user can select text.</p>
+            <h1>Float</h1>
+            <p style="font-size: 20px;">This utility class an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow</p>
             <table class="table max-h-250">
                 <thead>
                   <tr>
@@ -111,85 +111,61 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="text-blue-500">select-none</td>
-                    <td class="text-purple-500">user-select: none;</td>
+                    <td class="text-blue-500">float-none</td>
+                    <td class="text-purple-500">float: none;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">select-auto</td>
-                    <td class="text-purple-500">user-select: auto;</td>
+                    <td class="text-blue-500">float-left</td>
+                    <td class="text-purple-500">float: left;</td>
                   </tr>
                   <tr>
-                    <td class="text-blue-500">select-text</td>
-                    <td class="text-purple-500">user-select: text;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">select-contain</td>
-                    <td class="text-purple-500">user-select: contain;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-blue-500">select-all</td>
-                    <td class="text-purple-500">user-select: all;</td>
+                    <td class="text-blue-500">float-right</td>
+                    <td class="text-purple-500">float: right;</td>
                   </tr>
                 </tbody>
             </table>
             <h2>None</h2>
-            <p>You can apply <span class="text-blue-500">"select-none"</span> to the object's class.<br>Prevents the text of this element and the elements below it from being selected.  </p>
+            <p>You can apply <span class="text-blue-500">"float-none"</span> to the object's class.<br>The element must not float.</p>
             <div class="code-view">
                 <div class="view">
-                  <p class="select-none">Never underestimate your own ignorance.</p>
+                  <div class=" text-left">
+                    <div class="w-70 h-50 bg-purple-300 edge-20 float-none mb-10"></div>
+                    <p>Fellow-citizens, we can not escape history. We of this Congress and this Administration will be remembered in spite of ourselves. No personal significance or insignificance can spare one or another of us. The fiery trial through which we pass will light us down in honor or dishonor to the latest generation.<br> - Abraham Lincoln (1809.2.12 ~ 1865.4.15) <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln" class="text-blue-500">wikipedia</a></p>
+                  </div>
                 </div>
                 <code class="code">
-                  <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">select-none</span><span class="text-gray-400"> ... "> Never underestimate your own ignorance. &lt;/p&gt;</span>
+                  <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">float-none</span><span class="text-gray-400"> ... ">&lt;/div&gt;</span><br>
+                  <span class="text-gray-400">&lt;p&gt;I went to my room one day and locked...&lt;/p&gt;</span>
                 </code>
             </div>
-            <h2>Auto</h2>
-            <p>You can apply <span class="text-blue-500">"select-auto"</span> to the object's class.<br>The used value of <span>auto</span> is determined as follows: </p>
-            <ul>
-              <li>On the <span class="text-purple-500">::before</span> and <span class="text-purple-500">::after</span> pseudo elements, the used value is <span class="text-blue-500">none</span></li>
-              <li>If the element is an editable element, the used value is <span class="text-blue-500">contain</span></li>
-              <li>Otherwise, if the used value of <span class="text-blue-500">user-select</span> on the parent of this element is <span class="text-blue-500">all</span>, the used value is <span class="text-blue-500">all</span></li>
-              <li>Otherwise, if the used value of <span class="text-blue-500">user-select</span> on the parent of this element is <span class="text-blue-500">none</span>, the used value is <span class="text-blue-500">none</span></li>
-              <li>Otherwise, the used value is <span class="text-blue-500">text</span></li>
-            </ul>
+            <h2>Left</h2>
+            <p>You can apply <span class="text-blue-500">"float-left"</span> to the object's class.<br>The element must float on the left side of its containing block.</p>
             <div class="code-view">
                 <div class="view">
-                  <p class="select-auto">It's not that I'm so smart , it's just that I stay with problems longer.</p>
+                  <div class=" text-left">
+                    <div class="w-70 h-50 bg-gray-300 edge-20 float-left mr-10"></div>
+                    <p>As the patriots of seventy-six did to the support of the Declaration of Independence, so to the support of the Constitution and Laws, let every American pledge his life, his property, and his sacred honor; – let every man remember that to violate the law, is to trample on the blood of his father, and to tear the character of his own, and his children's liberty. Let reverence for the laws, be breathed by every American mother, to the lisping babe, that prattles on her lap – let it be taught in schools, in seminaries, and in colleges; – let it be written in Primmers, spelling books, and in Almanacs; – let it be preached from the pulpit, proclaimed in legislative halls, and enforced in courts of justice. And, in short, let it become the political religion of the nation; and let the old and the young, the rich and the poor, the grave and the gay, of all sexes and tongues, and colors and conditions, sacrifice unceasingly upon its altars. While ever a state of feeling, such as this, shall universally, or even, very generally prevail throughout the nation, vain will be every effort, and fruitless every attempt, to subvert our national freedom.<br> - Abraham Lincoln (1809.2.12 ~ 1865.4.15) <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln" class="text-blue-500">wikipedia</a></p>
+                  </div>
                 </div>
                 <code class="code">
-                  <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">select-auto</span><span class="text-gray-400"> ... "> It's not that I'm so smart , it's just that I stay with problems longer. &lt;/p&gt;</span>
+                  <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">float-left</span><span class="text-gray-400"> ... ">&lt;/div&gt;</span><br>
+                  <span class="text-gray-400">&lt;p&gt;As the patriots of seventy-six did to the support of...&lt;/p&gt;</span>
                 </code>
             </div>
-            <h2>Text</h2>
-            <p>You can apply <span class="text-blue-500">"select-text"</span> to the object's class.<br>The text can be selected by the user.</p>
+            <h2>Right</h2>
+            <p>You can apply <span class="text-blue-500">"float-right"</span> to the object's class.<br>The element must float on the right side of its containing block.</p>
             <div class="code-view">
                 <div class="view">
-                  <p class="select-text">Wisdom is not a product of schooling, but of the life- long attempt to acquire it.</p>
+                  <div class=" text-right">
+                    <div class="w-70 h-50 bg-green-300 edge-20 float-right ml-10"></div>
+                    <p>I went to my room one day and locked the door and got down upon my knees before Almighty God and prayed to Him mightily for victory at Gettysburg. I told Him that this war was His, and our cause His cause, that we could not stand another Fredericksburg or Chancellorsville. Then and there I made a solemn vow to Almighty God that if He would stand by our boys at Gettysburg, I would stand by Him, and He did stand by you boys, and I will stand by him. And after that, I don't know how it was, and I cannot explain it, soon a sweet comfort crept into my soul. The feeling came that God had taken the whole business into His own hands, and things would go right at Gettysburg, and that was why I had no fears about you.<br> - Abraham Lincoln (1809.2.12 ~ 1865.4.15) <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln" class="text-blue-500">wikipedia</a></p>
+                  </div>
                 </div>
                 <code class="code">
-                  <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">select-text</span><span class="text-gray-400"> ... "> Wisdom is not a product of schooling, but of the life- long attempt to acquire it. &lt;/p&gt;</span>
+                  <span class="text-gray-400">&lt;div class="</span><span class="text-blue-400">float-right</span><span class="text-gray-400"> ... ">&lt;/div&gt;</span><br>
+                  <span class="text-gray-400">&lt;p&gt;I went to my room one day and locked...&lt;/p&gt;</span>
                 </code>
             </div>
-            <h2>Contain</h2>
-            <p>You can apply <span class="text-blue-500">"select-contain"</span> to the object's class.<br>Enables selection to start within the element; however, the selection will be contained by the bounds of that element.</p>
-            <div class="code-view">
-                <div class="view">
-                  <p class="select-contain">We still do not know one - thousandth of one percent of what nature has revealed to us.</p>
-                </div>
-                <code class="code">
-                  <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">select-contain</span><span class="text-gray-400"> ... "> We still do not know one - thousandth of one percent of what nature has revealed to us. &lt;/p&gt;</span>
-                </code>
-            </div>
-            <h2>All</h2>
-            <p>You can apply <span class="text-blue-500">"select-all"</span> to the object's class.<br>The content of the element shall be selected atomically: If a selection would contain part of the element, then the selection must contain the entire element including all its descendants.  If a double-click or context-click occurred in sub-elements, the highest ancestor with this value will be selected.</p>
-            <div class="code-view">
-                <div class="view">
-                  <p class="select-all">Let every man be respected as an individual and no man idolized.</p>
-                </div>
-                <code class="code">
-                  <span class="text-gray-400">&lt;p class="</span><span class="text-blue-400">select-all</span><span class="text-gray-400"> ... "> Let every man be respected as an individual and no man idolized. &lt;/p&gt;</span>
-                </code>
-            </div>
-            <p>All examples are quotes from <a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="text-blue-500 line-none">Albert Einstein</a></p>
         </div>
     </div>
 </body>
