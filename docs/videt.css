@@ -1037,6 +1037,7 @@ p{
 .cursor-crosshair,.hover\:cursor-crosshair:hover,.active\:cursor-crosshair:active{cursor:crosshair;}
 .cursor-not-allowed,.hover\:cursor-not-allowed:hover,.active\:cursor-not-allowed:active{cursor:not-allowed;}
 .cursor-zoom-in,.hover\:cursor-zoom-in:hover,.active\:cursor-zoom-in:active{cursor:zoom-in;}
+.cursor-zoom-out,.hover\:cursor-zoom-out:hover,.active\:cursor-zoom-out:active{cursor:zoom-out;}
 .cursor-grab,.hover\:cursor-grab:hover,.active\:cursor-grab:active{cursor:grab;}
 .cursor-grabbing,.hover\:cursor-grabbing:hover,.active\:cursor-grabbing:active{cursor:grabbing;}
 .cursor-move,.hover\:cursor-move:hover,.active\:cursor-move:active{cursor:move;}
